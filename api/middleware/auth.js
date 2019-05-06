@@ -9,3 +9,9 @@ module.exports = (req, res, next) => {
     return res.status(401).json({ error: err, message: "Unauthenticated ." });
   }
 };
+// this is how to store a tken locally 
+// localStorage.setItem('token':token);
+// this removes a single file form local storage
+// localStorage.removeItem('token')
+// this is how you remove all from local storage
+// localStorage.clear();
